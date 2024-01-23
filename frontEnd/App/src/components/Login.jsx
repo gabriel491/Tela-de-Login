@@ -18,7 +18,8 @@ function Login() {
           headers: { "Content-Type": "application/json" },
         }
       );
-
+      // caso de certo o login vai exibir no console os dados
+      // E setar o usestate para o valor do User
       console.log(response.data);
       setUser(response.data);
     } catch (error) {
